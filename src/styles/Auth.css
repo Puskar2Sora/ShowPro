@@ -1,0 +1,88 @@
+.auth-page {
+  min-height: 100vh;
+  background: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'Outfit', sans-serif;
+}
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  background: #0e0e0e;
+  border: 1px solid #1e1e1e;
+  border-radius: 4px;
+  padding: 44px 40px;
+}
+.auth-eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #6ee7b7;
+  margin-bottom: 8px;
+}
+.auth-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #f0ede6;
+  letter-spacing: -0.03em;
+  margin-bottom: 32px;
+}
+.auth-form { display: flex; flex-direction: column; gap: 20px; }
+.auth-field { display: flex; flex-direction: column; gap: 7px; }
+.auth-field label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #aaa;
+}
+.auth-field input {
+  background: #080808;
+  border: 1px solid #222;
+  border-radius: 3px;
+  padding: 11px 14px;
+  color: #e8e6e0;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.92rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.auth-field input:focus { border-color: #6ee7b7; }
+.auth-field input::placeholder { color: #666; }
+.auth-btn {
+  margin-top: 8px;
+  padding: 12px;
+  background: #f0ede6;
+  color: #0a0a0a;
+  border: none;
+  border-radius: 3px;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.auth-btn:hover { opacity: 0.88; }
+.auth-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.auth-error {
+  background: rgba(226,75,74,0.08);
+  border: 1px solid rgba(226,75,74,0.25);
+  color: #e24b4a;
+  padding: 10px 14px;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+.auth-switch {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 0.85rem;
+  color: #888;
+}
+.auth-switch a { color: #6ee7b7; text-decoration: none; }
+.auth-switch a:hover { text-decoration: underline; }

@@ -1,0 +1,87 @@
+.ap-page {
+  min-height: 100vh;
+  background: #0a0a0a;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 20px 80px;
+  font-family: 'Outfit', sans-serif;
+}
+.ap-card {
+  width: 100%;
+  max-width: 560px;
+  background: #0e0e0e;
+  border: 1px solid #1e1e1e;
+  border-radius: 4px;
+  padding: 44px 40px;
+}
+.ap-eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #6ee7b7;
+  margin-bottom: 8px;
+}
+.ap-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #f0ede6;
+  letter-spacing: -0.03em;
+  margin-bottom: 32px;
+}
+.ap-form { display: flex; flex-direction: column; gap: 20px; }
+.ap-field { display: flex; flex-direction: column; gap: 7px; }
+.ap-field label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #aaa;
+}
+.ap-field input,
+.ap-field textarea {
+  background: #080808;
+  border: 1px solid #222;
+  border-radius: 3px;
+  padding: 11px 14px;
+  color: #e8e6e0;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.92rem;
+  outline: none;
+  transition: border-color 0.15s;
+  resize: vertical;
+  width: 100%;
+  box-sizing: border-box;
+}
+.ap-field input:focus,
+.ap-field textarea:focus { border-color: #6ee7b7; }
+.ap-field input::placeholder,
+.ap-field textarea::placeholder { color: #666; }
+.ap-btn {
+  margin-top: 8px;
+  padding: 12px;
+  background: #f0ede6;
+  color: #0a0a0a;
+  border: none;
+  border-radius: 3px;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.ap-btn:hover { opacity: 0.88; }
+.ap-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.ap-error {
+  background: rgba(226,75,74,0.08);
+  border: 1px solid rgba(226,75,74,0.25);
+  color: #e24b4a;
+  padding: 10px 14px;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+.ap-empty { color: #888; font-size: 0.9rem; text-align: center; padding: 20px 0; }
